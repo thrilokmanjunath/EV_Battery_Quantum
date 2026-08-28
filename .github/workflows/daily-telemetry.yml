@@ -37,7 +37,7 @@ jobs:
             git add telemetry/
             TODAY=$(date -u +'%Y-%m-%d')
             git commit -m "chore(telemetry): automated daily health sync [$TODAY] [skip ci]"
-            git push origin main
+            git push origin master
             echo "✅ Daily telemetry report committed and pushed successfully."
           else
             echo "ℹ️ No changes detected in telemetry."
